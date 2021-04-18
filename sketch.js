@@ -37,7 +37,8 @@ function draw() {
     background(rgb(169,169,169));
     //create edgeSprite
      edges = createEdgeSprites(); 
-     ball.bounceOff(edges); 
+     ball.bounceOff(edges);
+     ball -> ball.velocityX = 4;
    
     //add condition to check if box touching surface and make it box
    if(block1.isTouching(ball) && ball.bounceOff(block1)){
